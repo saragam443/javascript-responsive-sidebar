@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Responsive Sidebar</title>
+  </head>
+  <body class="bg-blue-200">
+    <header class="border-b">
+      <nav class="container m-auto p-6 flex items-center justify-between translate-x-1">
+        <a href="./index.html"><h1 class="text-2xl">
+          Responsive <span class="text-[orangered]">Sidebar</span>
+        </h1></a>
+  
+        <button class="text-[orangered] text-3xl" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <aside class="sidebar bg-[#e7f9ff] fixed p-6 top-0 left-0 w-full md:w-[400px] h-full -translate-x-full">
+      <div class="sidebar-header pb-6 flex items-center justify-between">
+        <a href="#"><h1 class="text-2xl">
+          Responsive <span class="text-[orangered]">Sidebar</span>
+        </h1></a>
+        <button class="text-[orangered] text-3xl" id="close-sidebar-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-body">
+        <ul class="links text-xl text-gray-600">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Our Clients</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="flex space-x-3 m-auto text-2xl side-bar-footer">
+        <i class="fa-brands fa-facebook-f text-[#4267B2]"></i>
+        <i class="fa-brands fa-behance text-[#053eff]"></i>
+        <i class="fa-brands fa-twitter text-[#00acee]"></i>
+        <i class="fa-brands fa-youtube text-[#FF0000]"></i>
+      </div>
+    </aside>
+    <script src="./main.js"></script>
+  </body>
+</html>
