@@ -1,12 +1,11 @@
-const close = document.querySelector("#close-sidebar-btn");
-const hamburger = document.querySelector("#hamburger");
-const sidebar = document.querySelector(".sidebar");
+const closeBtn = document.querySelector(".close-btn");
+const menuBtn = document.querySelector(".menu-btn");
+const sideBar = document.querySelector(".side-bar");
 
 
-hamburger.addEventListener("click", () => {
-    sidebar.classList.toggle("translate-x-0")
+menuBtn.addEventListener("click", () => {
+    sideBar.classList.toggle("show-side-bar")
 });
-close.addEventListener("click", () => {
-    sidebar.classList.remove("translate-x-0")
+closeBtn.addEventListener("click", () => {
+    sideBar.classList.remove("show-side-bar")
 });
-
